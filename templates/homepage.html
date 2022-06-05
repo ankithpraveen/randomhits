@@ -9,13 +9,13 @@
 
 <body>
     <form>
-    <input type="number" id="year" name="year" min="1980" max="2021">
-    <input type="submit" value="Play" id="playbutton" name="playbutton">
-    </form>
-    <!-- <iframe width="885" height="498" src="https://www.youtube.com/embed/e-ORhEE9VVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <input type="number" id="year" name="year" min="1980" max="2021">
+        <input type="submit" value="Play" id="playbutton" name="playbutton" onclick="playsong()"><br><br>
+    <!-- <iframe id="player" width="885" height="498" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+</form>
 </body>
 
-
-<script type="text/javascript" src="..\data\deathnroll.json"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="..\main.js"></script>
+
 </html>

@@ -1,42 +1,42 @@
 {
     "song1": {
-    "artist": "Entombed",
-    "title": "Wolverine Blues",
-    "year": "1993",
-    "videos": [
-        "qvI56MqFxqI",
-        "uNi0tsCU-6g",
-        "5GkoShU3xX4",
-        "2lnBmNJgRWs",
-        "OU7pijWivRI",
-        "bHhN261pdOU",
-        "s_uGq3upe9E"
-    ]
-},
-    "song2":{
-    "artist": "Lubricant",
-    "title": "Semistarvation",
-    "year": "1993",
-    "videos": [
-        "R_P0vVGkSkA",
-        "kWK-6F0RSvU",
-        "a07TuWU8D94",
-        "xDe6alZAb0M",
-        "NbNQALiLTS4",
-        "mY6P6HLXR9s"
-    ]
-},
-    "song3":{
-    "artist": "Gorefest",
-    "title": "Soul Survivor",
-    "year": "1996",
-    "videos": [
-        "T-WdUlWLc60",
-        "N0EcW36q534",
-        "25Wgpi7JVaY",
-        "V_ee6VmQnSg",
-        "yvh2DjbahQQ",
-        "ltx5njR2Hqk"
-    ]
-}
+        "artist": "Entombed",
+        "title": "Wolverine Blues",
+        "year": "1993",
+        "videos": [
+            "qvI56MqFxqI",
+            "uNi0tsCU-6g",
+            "5GkoShU3xX4",
+            "2lnBmNJgRWs",
+            "OU7pijWivRI",
+            "bHhN261pdOU",
+            "s_uGq3upe9E"
+        ]
+    },
+    "song2": {
+        "artist": "Lubricant",
+        "title": "Semistarvation",
+        "year": "1993",
+        "videos": [
+            "R_P0vVGkSkA",
+            "kWK-6F0RSvU",
+            "a07TuWU8D94",
+            "xDe6alZAb0M",
+            "NbNQALiLTS4",
+            "mY6P6HLXR9s"
+        ]
+    },
+    "song3": {
+        "artist": "Gorefest",
+        "title": "Soul Survivor",
+        "year": "1996",
+        "videos": [
+            "T-WdUlWLc60",
+            "N0EcW36q534",
+            "25Wgpi7JVaY",
+            "V_ee6VmQnSg",
+            "yvh2DjbahQQ",
+            "ltx5njR2Hqk"
+        ]
+    }
 }
