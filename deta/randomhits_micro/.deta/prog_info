@@ -1,0 +1,1 @@
+{"id":"744d983f-75f8-4d49-8564-917b7fd7a253","space":24251,"runtime":"nodejs14.x","name":"randomhits_micro","path":"uy0g61","project":"c0satnnd","account":"144798365827","region":"ap-southeast-1","deps":["express@^4.18.1"],"envs":null,"public":true,"log_level":"debug","cron":""}
