@@ -1,7 +1,7 @@
 const express = require('express');
 const { Deta } = require('deta');
 
-const deta = Deta('c0satnnd_czQVTKyaTkKp9qMcaNUcLhQxMDHwybos'); // configure your Deta project
+const deta = Deta(); // configure your Deta project
 const db = deta.Base('songs');  // access your DB
 
 
@@ -10,7 +10,7 @@ const app = express(); // instantiate express
 app.use(express.json()) // for parsing application/json bodies
 
 app.get('/', async (req, res) => {
-    res.json({"message" : "noerror"});
+    // res.json({ "message": "noerror" });
     res.render("home.ejs");
     // res.sendFile(__dirname+'../home.html');
 });
@@ -20,25 +20,26 @@ app.post('/addsong', async (req, res) => {
     res.status(201).json(insertedSong);
 });
 
-app.get('/users/:id', async (req, res) => {
+app.get('/songs/:id', async (req, res) => {
     const { id } = req.params;
     const user = await db.get(id);
     if (user) {
         res.json(user);
     } else {
-        res.status(404).json({"message": "user not found"});
+        res.status(404).json({ "message": "user not found" });
     }
 });
 
 app.get('/search-by-year/:year', async (req, res) => {
     const { year } = req.params;
-    const { items } = await db.fetch({"year":year});
+    const { items } = await db.fetch({ "year": year });
     res.json(items);
 });
 
 app.get('/fetchtest', async (req, res) => {
     let ret = await db.fetch();
-    res.json(ret.items);
+    // res.json(ret.items);
+    res.json({ 'count': ret.items.length });
 });
 
 app.put('/users/:id', async (req, res) => {
@@ -52,7 +53,7 @@ app.put('/users/:id', async (req, res) => {
 app.delete('/users/:id', async (req, res) => {
     const { id } = req.params;
     await db.delete(id);
-    res.json({"message": "deleted"})
+    res.json({ "message": "deleted" })
 });
 
 module.exports = app;
